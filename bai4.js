@@ -1,9 +1,11 @@
-let arr=[];
-let a=Number(prompt('moi ban nhap so phan tu muon them'));
-for(let i=0;i<a;i++){
-    arr[i]=Number(prompt("moi ban nhap phan tu thu "+(i+1)));
-}
+
+let str=prompt("moi nhap day so bat ky").trim();
+const arr=str.split("");
 let index=0;
+let a=arr.length;
+for(let i=0;i<a;i++){
+    arr[i]=Number(arr[i]);
+}
 for(let i=0;i<a;i++){
     if(Number.isInteger(arr[i])){
          index++;
